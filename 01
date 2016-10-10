@@ -1,0 +1,50 @@
+create table menu(
+id int primary key not null auto_increment,
+name varchar(100) not null,
+category_id int not null,
+kcal int not null,
+price int not null,
+description text not null,
+src_lg varchar(50) not null,
+src_sm varchar(50) not null,
+created datetime not null
+);
+
+create table category(
+id int primary key not null auto_increment,
+name varchar(100) not null
+);
+
+
+insert into menu (id,name,category_id,kcal,price,description,src_lg,src_sm,created)values(1,"30種の野菜のニース風サラダ",1,401,1200,"「できるですましさ。うわそえうよ、ぼくか泣いましな。」「押かついたのないぞ」二軒のわんは、びっくりしかぎの中へ、こんなことをあったう。その中青い叫ぶに進んだろて、きれいた二人いっけんのめまいらのクリームをしますだ。いやかぎがらんをはRESTAURANT紳士注文もとょはありません硝子紙くずナフキンという字をつかうがあっましまし。 ","9aSCp_lg.jpg","9aSCp_sm.jpg",now());
+insert into menu (id,name,category_id,kcal,price,description,src_lg,src_sm,created)values(2,"ズッキーニと人参のタルト",1,402,1210,"千円の悪く横っ腹黄いろに、おしてイギリスの香水の斯をできるて、ぼうっとし顔とっぽうを泣いて、香水ただのようませ匂に二西洋して、きっと牛乳あけてるの、ひびのふっと置きだ帽子が、こんなんに書いあって、はいりて行きたう。「結局、どこの山は裏側ぱちんとね。木は塩なあことは眼も顔たりろ。","qO9hZ_lg.jpg","qO9hZ_sm.jpg",now());
+insert into menu (id,name,category_id,kcal,price,description,src_lg,src_sm,created)values(3,"ピーカンナッツとリンゴのサラダ（自家製アップルサイダービネガーのドレッシング）",1,403,1230,"かさかさ下ろて、ところでで食べてふたり言えだましさ。」それもよくの札だた。歓迎してあっない声の鉄砲店は、これから云いて、これかにしながらいただけのわんだた。","cHzeF_lg.jpg","cHzeF_sm.jpg",now());
+insert into menu (id,name,category_id,kcal,price,description,src_lg,src_sm,created)values(4,"フランス産シェーブルチーズのスタッフドトマト",1,404,1240,"「もう僕も、二二二一人のおまけまし」と千人の顔が、その壺の顔香水を、そうたべので下さいてよろこびましつ。「ぼくは二二二百人の料理まし。」っと、も紳士で、若いそうに、はあれんががもしとがっますた。","0qJLC_lg.jpg","0qJLC_sm.jpg",now());
+insert into menu (id,name,category_id,kcal,price,description,src_lg,src_sm,created)values(5,"黒樺牛のカルパッチョ",1,405,1250,"とうもどって前その鳴りた。うは解いましなんてですか」それからどうもいですことは、それに鳴りがいらっしゃいんか、がさがさ食事をするましいらっしゃいてくださいたた。","od5RV_lg.jpg","od5RV_sm.jpg",now());
+insert into menu (id,name,category_id,kcal,price,description,src_lg,src_sm,created)values(6,"七色野菜の生春巻き",1,406,1260,"その中はやく死んへつかうなかっながら、立派た十人料理の世の中らの紳士が塗りなな。しかし犬玉方がはRESTAURANT喰ざわざわ造りRESTAURANT木声腹という顔がぶらさがってだしましだ。","D4qdR_lg.jpg","D4qdR_sm.jpg",now());
+insert into menu (id,name,category_id,kcal,price,description,src_lg,src_sm,created)values(7,"蒸し鶏とほうれん草のパワーサラダ",1,407,1270,"二人はその声が、裏側から紳士はいりたた。そしたらあの塩は、きっと舌なめずり顔のようです声がお客へよりそっのたり。「その顔はきものをさら悪く。ずいぶんぶう方ました。」","AokiF_lg.jpg","AokiF_sm.jpg",now());
+insert into menu (id,name,category_id,kcal,price,description,src_lg,src_sm,created)values(8,"北海道産氷詰めアスパラ、スモークサーモンとクリームチーズの前菜",1,408,1280,"どうみんな玉は、暖っとつけをありともしろましね。」十人は泥の一つが、空からやまてとこをぬけてぼくから木をいっでけしからんを来るたくな。そこでどうこらえてくださいだなて、僕は二円でも台どう台をなっんにそいし人ねえただ。","qjJdc_lg.jpg","qjJdc_sm.jpg",now());
+insert into menu (id,name,category_id,kcal,price,description,src_lg,src_sm,created)values(9,"シェーブルチーズとカリフラワー、マッシュルームのキッシュ",1,501,1290,"そこかをふりかけてあっだまでのしろくまただ。そこで、こう扉ですく痛くて、そのそんのようます草が、二あなとこにいらっしゃいがやまて、いろいろ法いろて、それとも奥なかに耳は戻ろて振りかけてまいりだたく。","oT3ZP_lg.jpg","oT3ZP_sm.jpg",now());
+insert into menu (id,name,category_id,kcal,price,description,src_lg,src_sm,created)values(10,"ズッキーニのパルメザンチーズ焼き",2,502,1300,"よく入ろうにかついだ動きてありましな。ろにどうに山猫はずしていて、西洋は用意、横っ腹はずんずん、靴はおいっけんにわかに置きだろた。","7L5oo_lg.jpg","7L5oo_sm.jpg",now());
+insert into menu (id,name,category_id,kcal,price,description,src_lg,src_sm,created)values(11,"フライドカリフラワー（チェダーチーズソース）",2,503,1310,"戸が見合せて行きもんは」五人はなかが注文壺に字ふうとうに泣い、兵隊で置いでもう知れしまいし声の中へいふだろた。犬の玄関がは、「紙くず、めまい、あな犬、鏡さ書い、そこもっともたち、もう落ししだのは、そこそれをまちがえててる」と尖てありました。","knacd_lg.jpg","knacd_sm.jpg",now());
+insert into menu (id,name,category_id,kcal,price,description,src_lg,src_sm,created)values(12,"ズッキーニとヨーグルトの冷製スープ",3,451,1000,"ましははらうませじゃたか」それからおして帰っますのも、ぼくをででうなっもんか、よくとんごを呼ぼた落してありだなく。木の葉にとうにいらっしゃいしていて、耳もかんじょう、戸は折角、ろはごいふよくいたう。","56BYj_lg.jpg","56BYj_sm.jpg",now());
+insert into menu (id,name,category_id,kcal,price,description,src_lg,src_sm,created)values(13,"バタースカッシュのポタージュスープ",3,452,1010,"一ぺんは注文まわっが、木たんをしと、がたがたにそうとしで、猟師の戸をわりて行きでした。痛くここか向う戸のくらいできるて、黄いろが空いてしうて、どうか次と廊下はうるさかっことが呼ぼててるて、二人だに無くなっましんないた。瓶のいらっしゃいから、そして立派なもんが消えてありたまし。","1NrRQ_lg.jpg","1NrRQ_sm.jpg",now());
+insert into menu (id,name,category_id,kcal,price,description,src_lg,src_sm,created)values(14,"高知産フルーツトマトのコンソメスープ",3,453,1020,"大きな中寒落しによろこんたて、立派ない一円注文のしゅうとようの風邪にしだた。そこで扉くずんをはょはありません鉄砲注文店WILDCAT喰酢裏側というこいつにそえじゃいたたい。「ぼく、もう多い。","tu90Z_lg.jpg","tu90Z_sm.jpg",now());
+insert into menu (id,name,category_id,kcal,price,description,src_lg,src_sm,created)values(15,"サツマイモのベジヌードル（アラビアータ）",4,601,1500,"ナフキンをいきなりに香水考えるていて、クリームは料理、めがねはごろごろ、耳はおオーバーどうもかみなだ。「よくカフスボタンにやまう。","Ah9L3_lg.jpg","Ah9L3_sm.jpg",now());
+insert into menu (id,name,category_id,kcal,price,description,src_lg,src_sm,created)values(16,"ズッキーニのベジヌードル（アルフレード）",4,602,1510,"どう腹に多いうるさかっじゃ、ちいさなとこのようまし戸へ、五疋大急ぎへ瀬戸にはいりて、そういちとがって、しかし奥扉でかぎはあるて思っとやっましだ。","Vo6Ox_lg.jpg","Vo6Ox_sm.jpg",now());
+insert into menu (id,name,category_id,kcal,price,description,src_lg,src_sm,created)values(17,"アトランティックサーモンのグリル",5,701,1600,"二発はご馳走引いて、居うんをもんて、硝子にどうと買っし、戸のネクタイピンが痛めてやったた。くさいその他か扉ブラシのまで入って、だめをできとしたて、決して文字や添も物凄もののいたしててるて、二人じゃのせるりものうまし。","4HSpW_lg.jpg","4HSpW_sm.jpg",now());
+insert into menu (id,name,category_id,kcal,price,description,src_lg,src_sm,created)values(18,"イベリコベジョータのグリーンマスタードソース",5,702,1610,"何を金抜がどうなってきだた。「ここはどうもと入り立ち。ぶるぶる大料理あたっだょはありません」百日もそして、寒いしておもうでた。","SGfx3_lg.jpg","SGfx3_sm.jpg",now());
+insert into menu (id,name,category_id,kcal,price,description,src_lg,src_sm,created)values(19,"天然明石産真鯛のロースト",5,702,1620,"二人もお注文となって、決してお書いう。「ここ、これ屋も大ご馳走を泣いていたしものた。」「ここ打ちは一つ云いしまいて」すっかり顔がかけできなば、ぜんたいも風やっの菜っ葉一声とりあわせのたまやで困っなかった。「まるできれいた西洋中た。","6KvIM_lg.jpg","6KvIM_sm.jpg",now());
+insert into menu (id,name,category_id,kcal,price,description,src_lg,src_sm,created)values(20,"フレッシュフルーツのグルテンフリーパンケーキ",6,501,1100,"たくさんはクリーム云いのあすこ硝子しの瓶たりへぬけたた。「かさかさきれいた叫中たく。せっかくそうたくさん扉をついものだます。」「ここはイギリスげんかまし。","ZYMBp_lg.jpg","ZYMBp_sm.jpg",now());
+insert into menu (id,name,category_id,kcal,price,description,src_lg,src_sm,created)values(21,"ミックスベリーのパブロバ",6,502,1110,"すを嫌まし顔をこうするながらてるだでし。「お西洋は注文がはやく料理店たとだいぶぼくはおびっくりだし」「どうつかういことた。その裏側の中に。」","ZmQRV_lg.jpg","ZmQRV_sm.jpg",now());
+insert into menu (id,name,category_id,kcal,price,description,src_lg,src_sm,created)values(22,"ラ・フランスのアーモンドケーキ",6,503,1120,"斯玄関と形は言いてふりかけててるたた。「ぶるぶるみんなは、二二二五人の入ろうまし」と二人の両方に、こんなぱちんとのへん斯が、たちまちいっがきて買っだでし。","X9zPu_lg.jpg","X9zPu_sm.jpg",now());
+
+
+insert into category(name)values("冷前菜");
+insert into category(name)values("温前菜");
+insert into category(name)values("スープ");
+insert into category(name)values("ベジヌードル");
+insert into category(name)values("メイン料理");
+insert into category(name)values("デザート");
+
+

@@ -1,0 +1,180 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700);
+
+/*Color
+403610  //main++ Brown
+7F6D20  //main+
+FFDA40  //Main   Yellow
+FFFBEB  //Background
+
+333347  //font
+
+876481 //btn change
+646489 //btn cancel
+*/
+
+body {
+    font-family: Avenir, "Open Sans", "Helvetica Neue", Helvetica, Arial, Verdana, Roboto, "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    line-height: 1.5em;
+    letter-spacing: 0.8pt;
+    font-weight: 500;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Roboto Slab", Garamond, "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 20px;
+}
+
+time {
+    font-size: 90%;
+}
+
+
+/*
+img
+*/
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*
+btn
+*/
+
+.btn-change {
+    background-color: red;
+    color: red;
+}
+
+.btn-cancel {
+    background-color: #646489;
+}
+
+
+/*
+table
+*/
+
+thead {
+    background-color: #403610;
+    color: #FFFBEB;
+    height: 6em;
+}
+
+
+/*
+header
+*/
+
+header h1 {
+    font-family: 'Dancing Script', cursive;
+}
+
+
+/*
+main
+*/
+
+
+/*
+footer
+*/
+
+footer nav {}
+
+
+/*
+home.html
+*/
+
+#home .jumbotron {
+    color: #FFFBEB;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#home .jumbotron h1 {
+    font-size: 28px;
+    padding: 0.5em;
+    font-weight: 500;
+}
+
+#home .jumbotron p {
+    font-size: 18px;
+    padding: 0.5em;
+    font-weight: 500;
+    line-height: 1.6em;
+}
+
+#main-top.jumbotron {
+    background-image: url(../images/home_GwCke.jpg);
+    height: 35em;
+}
+
+#main-top.jumbotron h1 {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    padding: 3em 3em;
+}
+
+#main-top.jumbotron h1 {
+    font-family: 'Dancing Script', cursive;
+}
+
+#main-about.jumbotron {
+    background-image: url(../images/home_DtqDf.jpg);
+}
+
+#main-stuff.jumbotron {
+    background-image: url(../images/home_NKBRA.jpg);
+}
+
+#main-health.jumbotron {
+    background-image: url(../images/home_PWM6h.jpg);
+}
+
+
+/*
+menu.html
+*/
+
+#menu .col-xs-6,
+#menu .col-xs-12 {
+    padding: 0;
+}
+
+#menu figure {
+    position: relative;
+}
+
+#menu figcaption {
+    position: absolute;
+    top: 2em;
+    font-family: "Roboto Slab", Garamond, "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #FFFBEB;
+    background-color: rgba(64, 54, 16, 0.8);
+    padding: 0.5em;
+}
