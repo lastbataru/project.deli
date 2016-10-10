@@ -1,0 +1,61 @@
+create table user(
+id int primary key not null auto_increment,
+lastname varchar(10) not null,
+firstname varchar(10) not null,
+password varchar(100) not null,
+email varchar(100) not null,
+postal1 varchar(3) not null,
+postal2 varchar(4) not null,
+prefecture varchar(10) not null,
+address1 varchar(50) not null,
+address2 varchar(50) not null,
+building varchar(50),
+regist datetime not null
+);
+
+create table allergy_category(
+id int primary key not null auto_increment,
+name varchar(50) not null
+);
+
+insert into allergy_category(name)values("Egg");
+insert into allergy_category(name)values("Flour");
+insert into allergy_category(name)values("Milk");
+insert into allergy_category(name)values("Soybean");
+insert into allergy_category(name)values("Peanut");
+insert into allergy_category(name)values("Fruits");
+insert into allergy_category(name)values("Shellfish");
+insert into allergy_category(name)values("Buckwheat");
+
+
+
+insert into user (lastname,firstname,password,email,postal1,postal2,prefecture,address1,address2,building,regist)values("前原","萌衣","B3L7ilAC","Mei_Maehara@qczu.bvkz.bu","981","4103","宮城県","加美郡色麻町高根","4-8","",now());
+insert into user (lastname,firstname,password,email,postal1,postal2,prefecture,address1,address2,building,regist)values("神保","初音","eogMPAwX","aotjkkvk=crphatsune46167@eltkuqr.yvr.wvs","605","856","京都府","京都市東山区新シ町","4-14","",now());
+insert into user (lastname,firstname,password,email,postal1,postal2,prefecture,address1,address2,building,regist)values("後藤","久吉","06c0B05g","hisakichi985@gzsaamht.qth","699","4222","島根県","江津市桜江町今田","4-14-18","ヴィレッジ桜江町今田111",now());
+insert into user (lastname,firstname,password,email,postal1,postal2,prefecture,address1,address2,building,regist)values("楠由","良","XT2QUGMi","yura882@ukfbkw.nnr","314","42","茨城県","鹿嶋市田野辺","2-11-3","",now());
+insert into user (lastname,firstname,password,email,postal1,postal2,prefecture,address1,address2,building,regist)values("小坂","彩音","sNDYsEnU","ayane_osaka@mmgjxca.hgl","817","156","長崎県","対馬市厳原町佐須瀬","4-18-15","",now());
+insert into user (lastname,firstname,password,email,postal1,postal2,prefecture,address1,address2,building,regist)values("板垣","紗英",",JSSn4GI","saeitagaki@hatus.gih","731","302","広島県","安芸高田市八千代町勝田","3-8","",now());
+insert into user (lastname,firstname,password,email,postal1,postal2,prefecture,address1,address2,building,regist)values("笹本","力男","qWEInDgH","rikio_sasamoto@ipwrefgeu.cyv.kk","873","407","大分県","国東市武蔵町狭間","3-2","ハウス武蔵町狭間403",now());
+insert into user (lastname,firstname,password,email,postal1,postal2,prefecture,address1,address2,building,regist)values("仲田","祥治","ZmXFfW7l","qpqumwshouji750@zqmncyudq.ealeo.wve","504","33","岐阜県","各務原市那加大谷町","1-13-2","ステージ那加大谷町106",now());
+insert into user (lastname,firstname,password,email,postal1,postal2,prefecture,address1,address2,building,regist)values("小野","和香","OA1BN5JU","mhu=atjukmbenkwaka88259@ibhf.ap","988","316","宮城県","気仙沼市本吉町新北明戸","2-9","コート本吉町新北明戸315",now());
+insert into user (lastname,firstname,password,email,postal1,postal2,prefecture,address1,address2,building,regist)values("山王","新","Q27HWbFM","lastbataru@ymobile.ne.jp","100","8111","東京都","千代田区千代田","１−１","皇居",now());
+insert into user (lastname,firstname,password,email,postal1,postal2,prefecture,address1,address2,building,regist)values("井出","真紀","hN-2s-S8","maki_ide@xrydzrp.td","368","4","埼玉県","秩父市山田","4-1-12","",now());
+insert into user (lastname,firstname,password,email,postal1,postal2,prefecture,address1,address2,building,regist)values("寺尾","千裕","j9g0BxEm","Chihiro_Terao@qsbablfcd.cz","640","8142","和歌山県","和歌山市三番丁","4-7-2","三番丁ステージ308",now());
+insert into user (lastname,firstname,password,email,postal1,postal2,prefecture,address1,address2,building,regist)values("渡部","裕治","n8QRshYy","yuuji6026@tyrvrgzv.jp","861","4632","熊本県","上益城郡甲佐町坂谷","4-7","坂谷テラス403",now());
+insert into user (lastname,firstname,password,email,postal1,postal2,prefecture,address1,address2,building,regist)values("二宮","来未","zD-POiHM","Kurumi_Ninomiya@ljcfkbz.em.td","817","321","長崎県","対馬市美津島町洲藻","4-11","",now());
+insert into user (lastname,firstname,password,email,postal1,postal2,prefecture,address1,address2,building,regist)values("小宮","葉月","0hsi48qh","hazuki872@ulgcckmwy.mll","198","174","東京都","青梅市御岳","2-4","プラザ御岳401",now());
+insert into user (lastname,firstname,password,email,postal1,postal2,prefecture,address1,address2,building,regist)values("笹原","隆則","13_jTeQL","takanori69832@vuanvekc.rbf","18","3119","秋田県","能代市二ツ井町薄井","3-13-20","",now());
+insert into user (lastname,firstname,password,email,postal1,postal2,prefecture,address1,address2,building,regist)values("柏木","香帆","6dbHTu_E","kaho5583@fwhpcvd.urh","36","303","青森県","黒石市株梗木横丁","3-1","",now());
+insert into user (lastname,firstname,password,email,postal1,postal2,prefecture,address1,address2,building,regist)values("塩崎","沙菜",",rr0P4Zj","sana057@uaurawfb.br.kz","224","12","神奈川県","横浜市都筑区牛久保","2-20-4","ガーデン牛久保200",now());
+insert into user (lastname,firstname,password,email,postal1,postal2,prefecture,address1,address2,building,regist)values("谷日","菜乃","5-Keiwpq","hinano88823@iyscgcswxg.crq","790","822","愛媛県","松山市高砂町","2-13-2","高砂町アパート409",now());
+insert into user (lastname,firstname,password,email,postal1,postal2,prefecture,address1,address2,building,regist)values("橋爪","七菜","WRz9y5jF","nana97640@caqvigpkyd.pkq","379","106","群馬県","安中市下後閑","1-4-17","",now());
+insert into user (lastname,firstname,password,email,postal1,postal2,prefecture,address1,address2,building,regist)values("北野","則明","QBMNqcMC","nntdexdndoynoriaki1525@raxrjo.pj","735","27","広島県","安芸郡府中町千代","1-4","千代庵305",now());
+insert into user (lastname,firstname,password,email,postal1,postal2,prefecture,address1,address2,building,regist)values("金丸","正義","cWq8N1rK","masayoshi762@ntghqjsyj.xy.wox","740","322","山口県","岩国市廿木","3-11-19","",now());
+insert into user (lastname,firstname,password,email,postal1,postal2,prefecture,address1,address2,building,regist)values("河野","貴美","TZEHd9Zq","kimi_kawano@grnpptsw.tqs.ec","224","25","神奈川県","横浜市都筑区早渕","1-14","",now());
+insert into user (lastname,firstname,password,email,postal1,postal2,prefecture,address1,address2,building,regist)values("古河","清","0NpEno9_","kiyoshifurukawa@hnazzzxqr.qzu","769","1103","香川県","三豊市詫間町香田","3-10-9","詫間町香田タウン118",now());
+insert into user (lastname,firstname,password,email,postal1,postal2,prefecture,address1,address2,building,regist)values("梅木","憲二","I5tg31Dk","kenji5513@ewotoutqja.pr","905","1206","沖縄県","国頭郡東村有銘","4-10-11","有銘プレイス202",now());
+insert into user (lastname,firstname,password,email,postal1,postal2,prefecture,address1,address2,building,regist)values("宮田","孝治","QvXRBBJ4","kouji07095@rnrxexeirc.aedhr.jsl","243","12","神奈川県","厚木市幸町","1-6","",now());
+insert into user (lastname,firstname,password,email,postal1,postal2,prefecture,address1,address2,building,regist)values("須田","真歩","9ZZ65BTK","maho_suda@djfl.gv","300","872","茨城県","土浦市沖新田","1-8-3","",now());
+insert into user (lastname,firstname,password,email,postal1,postal2,prefecture,address1,address2,building,regist)values("北川","松夫","f,QOcda-","matsuo17751@oszupznq.ige","278","37","千葉県","野田市野田","1-4-9","",now());
+insert into user (lastname,firstname,password,email,postal1,postal2,prefecture,address1,address2,building,regist)values("相沢","利之","AUM68ana","toshiyuki177@yfon.qmvy.eni","693","2","島根県","出雲市今市町北本町","3-2-15","今市町北本町アパート307",now());
+insert into user (lastname,firstname,password,email,postal1,postal2,prefecture,address1,address2,building,regist)values("藤本","正之","PAk0JRwC","masayuki_fujimoto@czud.yye","630","8311","奈良県","奈良市十輪院畑町","1-8-2","ザ十輪院畑町107",now());
