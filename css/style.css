@@ -30,7 +30,7 @@ h5,
 h6 {
     font-family: "Roboto Slab", Garamond, "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
     font-size: 24px;
-    font-weight: 500;
+    font-weight: 450;
 }
 
 h2,
@@ -103,7 +103,7 @@ footer nav {}
 
 
 /*
-home.html
+home
 */
 
 #home .jumbotron {
@@ -116,7 +116,7 @@ home.html
 #home .jumbotron h1 {
     font-size: 28px;
     padding: 0.5em;
-    font-weight: 500;
+    font-weight: 450;
 }
 
 #home .jumbotron p {
@@ -133,7 +133,7 @@ home.html
 
 #main-top.jumbotron h1 {
     font-size: 40px;
-    font-weight: bold;
+    font-weight: 450;
     text-align: center;
     padding: 3em 3em;
 }
@@ -156,7 +156,7 @@ home.html
 
 
 /*
-menu.html
+menu
 */
 
 #menu .col-xs-6,
@@ -173,8 +173,26 @@ menu.html
     top: 2em;
     font-family: "Roboto Slab", Garamond, "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 400;
     color: #FFFBEB;
     background-color: rgba(64, 54, 16, 0.8);
     padding: 0.5em;
+}
+
+
+/*
+detail
+*/
+
+#detail.containter h1 {
+    font-weight: 500;
+}
+
+
+/*
+news
+*/
+
+#news.containter h2 {
+    font-weight: 500;
 }

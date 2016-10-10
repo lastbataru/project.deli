@@ -27,3 +27,5 @@ insert into news_category(name)values("Ticket");
 insert into news_category(name)values("Event");
 
 select * from news join news_category on news.category_id=news_category.id
+
+GRANT select ON dilldelivery.* to 'dilluser'@'localhost';

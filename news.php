@@ -7,7 +7,7 @@ define ( "IMAGE_PATH", "images/news/" );
 
 try {
   $pdo = db_init ();
-  $stmt = $pdo->query ( "select * from news join news_category on news.category_id=news_category.id ORDER BY created DESC" );
+  $stmt = $pdo->query ( "select * from news join news_category on news.category_id=news_category.id ORDER BY created DESC limit 0,10" );
   $news = $stmt->fetchAll ();
 } catch ( PDOException $e ) {
   echo $e->getMessage ();

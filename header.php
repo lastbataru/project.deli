@@ -22,9 +22,7 @@
 				<li><a href="cart.php">買い物かご</a></li>
 				<li><a href="menu.php">メニュー</a></li>
 				<li><a href="news.php">お知らせ</a></li>
-				<li>マイページ</li>
 				<li><a href="user.php">ユーザー情報</a></li>
-				<li><a href="coupon.php">クーポン</a></li>
 				<li>Help</li>
 				<li><a href="help_faq.php">よくあるご質問</a></li>
 				<li><a href="help_allergy.php">カロリー・アレルギー</a></li>
