@@ -2,24 +2,30 @@
 require_once 'inc/util.php';
 require_once 'inc/db.php';
 session_start ();
-if ($_POST ["login"] != true) {
-  header ( "Location: login.php" );
-  exit ();
+if ($_SESSION ["login"] != true) {
+	header ( "Location: login.php" );
+	exit ();
 }
 $email = $_SESSION ["email"];
 try {
-  $pdo = db_init ();
-  $stmt = $pdo->query ( "select * from user where email='" . $email . "'" );
-  $user = $stmt->fetch ();
+	$pdo = db_init ();
 
-  $id = $user ["id"];
-  $stmtAllergy = $pdo->query ( "select * from allergy_category join allergy_user
-on allergy_category.id=allergy_user.allergy_id
-where allergy_user.user_id=" . $id );
-  $allergies = $stmtAllergy->fetchAll ();
+	$stmt = $pdo->query ( "select * from user where email='" . $email . "'" );
+	$user = $stmt->fetch ();
+
+	$id = $user ["id"];
+	$stmtAllergy = $pdo->query ( "select * from allergy_category join allergy_user
+		on allergy_category.id=allergy_user.allergy_id
+		where allergy_user.user_id=" . $id );
+	$allergies = $stmtAllergy->fetchAll ();
+
+	$stmtCoupon = $pdo->query ( "select * from coupon_name join coupon_user
+		on coupon_name.id=coupon_user.coupon_id
+		where coupon_user.user_id=" . $id );
+	$coupons = $stmtCoupon->fetchAll ();
 } catch ( PDOException $e ) {
-  echo $e->getMessage ();
-  exit ();
+	echo $e->getMessage ();
+	exit ();
 }
 ?>
 <?php require_once 'header.php';?>
@@ -56,10 +62,18 @@ where allergy_user.user_id=" . $id );
 						</div>
 					</div>
 					<div class="panel panel-default">
+						<div class="panel-heading">クーポン</div>
+						<div class="panel-body">
+							<?php foreach ($coupons as $coupon):?>
+								<p><?php echo $coupon ["name"];?></p>
+							<?php endforeach;?>
+						</div>
+					</div>
+					<div class="panel panel-default">
 						<div class="panel-heading">アレルギー</div>
 						<div class="panel-body">
 							<?php foreach ($allergies as $allergy):?>
-							<p><?php echo $allergy ["name"];?></p>
+								<p><?php echo $allergy ["name"];?></p>
 							<?php endforeach;?>
 						</div>
 					</div>

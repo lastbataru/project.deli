@@ -36,7 +36,7 @@ define ( "IMAGE_PATH", "images/menu/" );
 			</tr>
 			<?php endforeach;?>
 			<?php else:?>
-				<td>空です</td>
+				<td>買い物かごは空です。</td>
 			<?php endif;?>
 		</tbody>
 	</table>

@@ -2,10 +2,6 @@
 require_once 'inc/util.php';
 require_once 'inc/db.php';
 session_start ();
-if ($_POST ["login"] == true) {
-  header ( "Location: user.php" );
-  exit ();
-}
 $email = "";
 $pass = "";
 if ($_SERVER ["REQUEST_METHOD"] === "POST") {
@@ -47,6 +43,7 @@ if ($_SERVER ["REQUEST_METHOD"] === "POST") {
 ?>
 <?php require_once 'header.php';?>
 <div class="contain" id="login">
+<?php var_dump($_SESSION);?>
 	<form action="#" method="post">
 	  <?php if (isset($errorEmail)): ?>
       <p class="error"><?php echo $errorEmail; ?></p>
