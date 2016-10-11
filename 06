@@ -1,0 +1,8 @@
+select * from allergy_category join allergy_user
+on allergy_category.id=allergy_user.allergy_id
+where allergy_user.user_id=10;
+
+select * from stuff_name join stuff_menu
+on stuff_name.id=stuff_menu.stuff_id
+where stuff_menu.menu_id=1;
+

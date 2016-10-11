@@ -1,3 +1,8 @@
+<?php
+session_start ();
+define ( "IMAGE_PATH", "images/menu/" );
+?>
+
 <?php require_once 'header.php';?>
 <div class="containter" id="cart">
 	<table class="table table-bordered">
@@ -9,17 +14,19 @@
 			</tr>
 		</thead>
 		<tbody>
+			<?php if (is_array($_SESSION["cart"])):?>
+			<?php foreach ($_SESSION ["cart"] as $item):?>
 			<tr>
 				<td>
 					<div class="col-xs-4">
-						<img src="images/menu_IW1Ay.jpg" alt="">
+						<img src="<?php echo IMAGE_PATH.$item["src"]?>"
+							alt="<?php echo $item["name"]?>">
 					</div>
 					<div class="col-xs-8">
 						<div>
-							<h2>バタースカッシュのポタージュスープ</h2>
-							<span>数量：1</span>
+							<h2><?php echo $item["name"]?></h2>
 						</div>
-						<div>850円（税込）</div>
+						<div><?php echo $item["price"]?>円（税込）</div>
 						<div>
 							<a href="#" class="ui-btn btn-change">変更</a> <a href="#"
 								class="ui-btn btn-cancel">キャンセル</a>
@@ -27,60 +34,10 @@
 					</div>
 				</td>
 			</tr>
-			<tr>
-				<td>
-					<div class="col-xs-4">
-						<img src="images/menu_YlhFX.jpg" alt="">
-					</div>
-					<div class="col-xs-8">
-						<div>
-							<h2>アトランティックサーモンのグリル</h2>
-							<span>数量：1</span>
-						</div>
-						<div>1480円（税込）</div>
-						<div>
-							<a href="#" class="ui-btn btn-change">変更</a> <a href="#"
-								class="ui-btn btn-cancel">キャンセル</a>
-						</div>
-					</div>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<div class="col-xs-4">
-						<img src="images/menu_pmVa5.jpg" alt="">
-					</div>
-					<div class="col-xs-8">
-						<div>
-							<h2>ズッキーニのベジヌードル（アルフレード）</h2>
-							<span>数量：1</span>
-						</div>
-						<div>1740円（税込）</div>
-						<div>
-							<a href="#" class="ui-btn btn-change">変更</a> <a href="#"
-								class="ui-btn btn-cancel">キャンセル</a>
-						</div>
-					</div>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<div class="col-xs-4">
-						<img src="images/menu_2OkgY.jpg" alt="">
-					</div>
-					<div class="col-xs-8">
-						<div>
-							<h2>ミックスベリーのパブロバ</h2>
-							<span>数量：1</span>
-						</div>
-						<div>1200円（税込）</div>
-						<div>
-							<a href="#" class="ui-btn btn-change">変更</a> <a href="#"
-								class="ui-btn btn-cancel">キャンセル</a>
-						</div>
-					</div>
-				</td>
-			</tr>
+			<?php endforeach;?>
+			<?php else:?>
+				<td>空です</td>
+			<?php endif;?>
 		</tbody>
 	</table>
 	<table class="table table-bordered">

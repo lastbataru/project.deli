@@ -1,7 +1,6 @@
 <?php
 require_once 'inc/util.php';
 require_once 'inc/db.php';
-require_once 'inc/auth.php';
 
 define ( "IMAGE_PATH", "images/news/" );
 

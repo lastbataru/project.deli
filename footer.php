@@ -2,7 +2,7 @@
 <footer data-role="footer" data-position="fixed" data-tap-toggle="false">
 	<div data-role="navbar">
 		<ul>
-			<li><a href="home.php">Home</a></li>
+			<li><a href="index.php">Home</a></li>
 			<li><a href="cart.php">Cart</a></li>
 			<li><a href="menu.php">Menu</a></li>
 			<li><a href="news.php">News</a></li>

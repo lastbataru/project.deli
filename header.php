@@ -17,8 +17,7 @@
 	<div data-role="page">
 		<nav class="drawer-nav">
 			<ul class="drawer-menu" data-role="listview" data-fileter="true">
-				<li></li>
-				<li><a href="home.php">ホーム</a></li>
+				<li><a href="index.php">ホーム</a></li>
 				<li><a href="cart.php">買い物かご</a></li>
 				<li><a href="menu.php">メニュー</a></li>
 				<li><a href="news.php">お知らせ</a></li>
@@ -34,11 +33,11 @@
 		<header data-role="header" data-position="fixed"
 			data-tap-toggle="false">
 			<button type="button" class="drawer-toggle drawer-hamburger">
-				<span class="sr-only">toggle navigation</span> <span
-					class="drawer-hamburger-icon"> </span>
+				<span class="sr-only"></span>
+				<span class="icon">List</span>
 			</button>
 			<h1>
-				<a href="home.php">Dill Delivery</a>
+				<a href="index.php">Dill Delivery</a>
 			</h1>
 		</header>
 		<main data-role="content" role="main">
