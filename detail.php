@@ -1,7 +1,6 @@
 <?php
 require_once 'inc/util.php';
 require_once 'inc/db.php';
-require_once 'inc/auth.php';
 session_start ();
 
 define ( "IMAGE_PATH_MENU", "images/menu/" );
@@ -10,14 +9,15 @@ if (isset ( $_GET ["id"] )) {
   $id = $_GET ["id"];
   try {
     $pdo = db_init ();
-    $stmt = $pdo->prepare ( "SELECT * FROM menu WHERE id=?" );
+    $stmt = $pdo->prepare ( "SELECT * FROM dill_menu WHERE id=?" );
     $stmt->execute ( array (
         $id
     ) );
     $menu = $stmt->fetch ();
 
-    $stmtStuffList = $pdo->query ( "select * from stuff_name join stuff_menu on stuff_name.id=stuff_menu.stuff_id
-where stuff_menu.menu_id=" . $id );
+    $stmtStuffList = $pdo->query ( "select * from dill_stuff_name join dill_stuff_menu
+        on dill_stuff_name.id=dill_stuff_menu.stuff_id
+        where dill_stuff_menu.menu_id=" . $id );
     $stuffList = $stmtStuffList->fetchAll ();
   } catch ( PDOException $e ) {
     echo $e->getMessage ();
@@ -41,7 +41,6 @@ if ($_SERVER ["REQUEST_METHOD"] === "POST") {
 ?>
 <?php require_once 'header.php';?>
 <div class="containter" id="detail">
-
 	<img src="<?php echo IMAGE_PATH_MENU.h($menu["src_lg"])?>"
 		alt="<?php echo h($menu["name"]);?>">
 	<h1><?php echo h($menu["name"]);?></h1>

@@ -19,14 +19,16 @@ if ($_SERVER ["REQUEST_METHOD"] === "POST") {
   if ($isValidated == true) {
     try {
       $pdo = db_init ();
-      $stmt = $pdo->prepare ( "select * from user where email=? and password=?" );
+      $stmt = $pdo->prepare ( "select * from dill_user where email=? and password=?" );
       $stmt->execute ( array (
           $email,
           $pass
       ) );
       $info = $stmt->fetch ();
       if ($info != false) {
+        $errorLogin = "ss";
         session_regenerate_id ();
+        $_SESSION ["aa"] = "";
         $_SESSION ["email"] = $email;
         $_SESSION ["login"] = true;
         header ( "Location: user.php" );
@@ -43,7 +45,6 @@ if ($_SERVER ["REQUEST_METHOD"] === "POST") {
 ?>
 <?php require_once 'header.php';?>
 <div class="contain" id="login">
-<?php var_dump($_SESSION);?>
 	<form action="#" method="post">
 	  <?php if (isset($errorEmail)): ?>
       <p class="error"><?php echo $errorEmail; ?></p>

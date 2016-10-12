@@ -1,15 +1,14 @@
 <?php
 require_once 'inc/util.php';
 require_once 'inc/db.php';
-require_once 'inc/auth.php';
 
 define ( "IMAGE_PATH", "images/menu/" );
 
 try {
   $pdo = db_init ();
-  $stmtlg = $pdo->query ( "SELECT * FROM menu ORDER BY created DESC limit 0,1" );
+  $stmtlg = $pdo->query ( "SELECT * FROM dill_menu ORDER BY created DESC limit 0,1" );
   $menulg = $stmtlg->fetchAll ();
-  $stmtsm = $pdo->query ( "SELECT * FROM menu ORDER BY created DESC limit 1,100" );
+  $stmtsm = $pdo->query ( "SELECT * FROM dill_menu ORDER BY created DESC limit 1,100" );
   $menusm = $stmtsm->fetchAll ();
 } catch ( PDOException $e ) {
   echo $e->getMessage ();

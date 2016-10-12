@@ -1,0 +1,85 @@
+create table coupon_name(
+id int primary key not null auto_increment,
+name varchar(100) not null,
+price int not null,
+percentage int not null,
+created datetime not null
+);
+
+insert into coupon_name (id,name,price,percentage,created)values(1,"初回限定!10％OFFクーポン",0,10,now());
+insert into coupon_name (id,name,price,percentage,created)values(2,"20回ご注文記念!!20%OFFクーポン",0,20,now());
+insert into coupon_name (id,name,price,percentage,created)values(3,"50回ご注文記念!!50%OFFクーポン",0,50,now());
+insert into coupon_name (id,name,price,percentage,created)values(4,"ご利用者様1000人突破記念!1000円引きクーポン",1000,0,now());
+insert into coupon_name (id,name,price,percentage,created)values(5,"ご利用者様2000人突破記念!2000円引きクーポン",1000,0,now());
+
+
+
+
+create table coupon_user(
+id int primary key not null auto_increment,
+user_id int not null,
+coupon_id int not null
+);
+
+insert into coupon_user(user_id,coupon_id)values(1,1);
+insert into coupon_user(user_id,coupon_id)values(2,3);
+insert into coupon_user(user_id,coupon_id)values(3,2);
+insert into coupon_user(user_id,coupon_id)values(4,3);
+insert into coupon_user(user_id,coupon_id)values(5,1);
+insert into coupon_user(user_id,coupon_id)values(6,3);
+insert into coupon_user(user_id,coupon_id)values(7,2);
+insert into coupon_user(user_id,coupon_id)values(8,3);
+insert into coupon_user(user_id,coupon_id)values(9,1);
+insert into coupon_user(user_id,coupon_id)values(10,3);
+insert into coupon_user(user_id,coupon_id)values(11,1);
+insert into coupon_user(user_id,coupon_id)values(12,2);
+insert into coupon_user(user_id,coupon_id)values(13,3);
+insert into coupon_user(user_id,coupon_id)values(14,2);
+insert into coupon_user(user_id,coupon_id)values(15,1);
+insert into coupon_user(user_id,coupon_id)values(16,3);
+insert into coupon_user(user_id,coupon_id)values(17,1);
+insert into coupon_user(user_id,coupon_id)values(18,3);
+insert into coupon_user(user_id,coupon_id)values(19,2);
+insert into coupon_user(user_id,coupon_id)values(20,2);
+insert into coupon_user(user_id,coupon_id)values(21,2);
+insert into coupon_user(user_id,coupon_id)values(22,2);
+insert into coupon_user(user_id,coupon_id)values(23,2);
+insert into coupon_user(user_id,coupon_id)values(24,2);
+insert into coupon_user(user_id,coupon_id)values(25,1);
+insert into coupon_user(user_id,coupon_id)values(26,1);
+insert into coupon_user(user_id,coupon_id)values(27,1);
+insert into coupon_user(user_id,coupon_id)values(28,1);
+insert into coupon_user(user_id,coupon_id)values(29,3);
+insert into coupon_user(user_id,coupon_id)values(30,3);
+insert into coupon_user(user_id,coupon_id)values(1,4);
+insert into coupon_user(user_id,coupon_id)values(2,5);
+insert into coupon_user(user_id,coupon_id)values(3,4);
+insert into coupon_user(user_id,coupon_id)values(4,5);
+insert into coupon_user(user_id,coupon_id)values(5,4);
+insert into coupon_user(user_id,coupon_id)values(6,4);
+insert into coupon_user(user_id,coupon_id)values(7,5);
+insert into coupon_user(user_id,coupon_id)values(8,5);
+insert into coupon_user(user_id,coupon_id)values(9,4);
+insert into coupon_user(user_id,coupon_id)values(10,4);
+insert into coupon_user(user_id,coupon_id)values(11,4);
+insert into coupon_user(user_id,coupon_id)values(12,4);
+insert into coupon_user(user_id,coupon_id)values(13,5);
+insert into coupon_user(user_id,coupon_id)values(14,4);
+insert into coupon_user(user_id,coupon_id)values(15,5);
+insert into coupon_user(user_id,coupon_id)values(16,4);
+insert into coupon_user(user_id,coupon_id)values(17,5);
+insert into coupon_user(user_id,coupon_id)values(18,4);
+insert into coupon_user(user_id,coupon_id)values(19,5);
+insert into coupon_user(user_id,coupon_id)values(20,4);
+insert into coupon_user(user_id,coupon_id)values(21,5);
+insert into coupon_user(user_id,coupon_id)values(22,4);
+insert into coupon_user(user_id,coupon_id)values(23,4);
+insert into coupon_user(user_id,coupon_id)values(24,4);
+insert into coupon_user(user_id,coupon_id)values(25,4);
+insert into coupon_user(user_id,coupon_id)values(26,4);
+insert into coupon_user(user_id,coupon_id)values(27,5);
+insert into coupon_user(user_id,coupon_id)values(28,5);
+insert into coupon_user(user_id,coupon_id)values(29,4);
+insert into coupon_user(user_id,coupon_id)values(30,5);
+
+
